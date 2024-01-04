@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="408dp"
+        android:layout_height="76dp"
+        android:background="@color/green2"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+
+        <ImageButton
+            android:id="@+id/velo_page"
+            android:layout_width="53dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/bicycle"
+            android:contentDescription="Velo Button"
+            android:onClick="onVeloPageButtonClick"/>
+
+        <ImageButton
+            android:id="@+id/chat_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/chat"
+            android:contentDescription="Chat Button"
+            android:onClick="onChatButtonClick"/>
+
+        <ImageButton
+            android:id="@+id/new_post"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/more"
+            android:contentDescription="New Post Button"
+            android:onClick="onNewPostButtonClick"
+            />
+
+        <ImageButton
+            android:id="@+id/payments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/credit_card"
+            android:contentDescription="Payments Button"
+            android:onClick="onPaymentsButtonClick"/>
+
+        <ImageButton
+            android:id="@+id/profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/userr"
+            android:contentDescription="Profile Button"
+            android:onClick="onProfileButtonClick"
+            />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
